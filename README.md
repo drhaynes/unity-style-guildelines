@@ -46,7 +46,7 @@ public class #SCRIPTNAME# : MonoBehaviour
 * Put everything inside a top-level namespace. This avoids clashes with your own project code and 3rd-party libraries.
 * Favour pure .NET C# for model objects and business logic wherever possible (over `MonoBehviour` subclasses or other things that dependy on `UnityEngine`).
 * For dependency management, serialize references in the inspector (or interfaces via the Full Inspector asset).
-* Enable full Unity inspector serilisation by inheriting from the pure C# model objects. (e.g. `Weapon` becomes `UnityWeapon` with Unity's serialisation attiritubes added to the class' variables.
+* Enable full Unity inspector serialisation by inheriting from pure C# model objects. (e.g. `Weapon` becomes `UnityWeapon` with Unity's serialisation attiritubes added to the class' variables.
 * `GameObject.Find()` is a code smell. If you think you need it, you can probably improve your design to remove it.
 * Use `[RequireComponent(typeof(<Type>))]` to enforce component dependencies in scripts.
 * Use `[SerializeField]` on private member fields to expose them in the inspector, rather than making fields public.
